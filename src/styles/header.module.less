@@ -1,0 +1,81 @@
+.navStyles {
+  padding: 40px 0;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+
+  :global {
+    .menu-list {
+      flex: 1;
+      display: flex;
+      vertical-align: middle;
+      color: #6e6e6e;
+
+      .menu-item {
+        position: relative;
+        cursor: pointer;
+        margin-right: 50px;
+      }
+      .menu-sub-list {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 16px;
+        border-radius: 4px;
+        z-index: 99;
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 0 5px 0 #999;
+
+        .item {
+          white-space: nowrap;
+        }
+        .item:hover {
+          cursor: pointer;
+          color: #000;
+        }
+      }
+
+      .show-sub:hover {
+        .menu-sub-list {
+          display: block;
+        }
+      }
+    }
+
+    .middle-title {
+      flex: 1;
+      text-align: center;
+
+      a {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    .more-tools {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+
+      .tool {
+        height: 40px;
+        margin-left: 40px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      .login {
+        color: #6e6e6e;
+      }
+    }
+  }
+}

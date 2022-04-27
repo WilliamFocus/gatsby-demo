@@ -1,0 +1,33 @@
+.footerStyles {
+  display: flex;
+  justify-content: center;
+  height: 284px;
+  padding: 48px;
+
+  :global {
+    a {
+      font-size: 20px;
+      color: #000;
+      text-decoration: none;
+    }
+    .item {
+      flex: 1;
+    }
+    .item:first-child ~ .item {
+      margin-top: 12px;
+      padding: 0 8px;
+    }
+    .item > li {
+      font-size: 16px;
+      color: #3D3D3D;
+      height: 32px;
+      line-height: 32px;
+    }
+    .item > li:first-child {
+      font-size: 14px;
+      font-weight: 600;
+      color: #6E6E6E;
+      margin-bottom: 12px;
+    }
+  }
+}
