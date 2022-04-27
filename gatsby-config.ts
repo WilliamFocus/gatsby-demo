@@ -1,8 +1,11 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+import path from "path"
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `I Love LAMP`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Gatsby Demo Project Desc`,
+    author: `WilliamFocus`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -13,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.resolve(`src/images`),
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,3 +40,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+export default config
