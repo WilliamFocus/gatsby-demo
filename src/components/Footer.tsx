@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { footerStyles } from "../styles/footer.module.less"
-console.log("footerStyles: ", footerStyles)
 
 type FooterPropsType = {
   siteTitle: string
@@ -15,9 +14,15 @@ const Footer: React.FC<FooterPropsType> = ({ siteTitle = "" }) => {
       </div>
       <ul className="item">
         <li>CATEGORIES</li>
-        <li>Desk Lamps</li>
-        <li>Floor Lamps</li>
-        <li>Table Lamps</li>
+        <li>
+          <Link to="/products">Desk Lamps</Link>
+        </li>
+        <li>
+          <Link to="/products">Floor Lamps</Link>
+        </li>
+        <li>
+          <Link to="/products">Table Lamps</Link>
+        </li>
       </ul>
       <ul className="item">
         <li>INFORMATION</li>

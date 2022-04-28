@@ -13,14 +13,24 @@ const Header: React.FC<HeaderPropsType> = ({ siteTitle = "" }) => {
     <header>
       <div className={navStyles}>
         <ul className="menu-list">
-          <li className="menu-item">Products</li>
-          <li className="menu-item">About</li>
+          <li className="menu-item">
+            <Link to="/products">Products</Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/about">About</Link>
+          </li>
           <li className="menu-item show-sub">
             Collections
             <ul className="menu-sub-list">
-              <li className="item">Office Lamps</li>
-              <li className="item">Bedroom Lamps</li>
-              <li className="item">Top Picks</li>
+              <li className="item">
+                <Link to="/products">Office Lamps</Link>
+              </li>
+              <li className="item">
+                <Link to="/products">Bedroom Lamps</Link>
+              </li>
+              <li className="item">
+                <Link to="/products">Top Picks</Link>
+              </li>
             </ul>
           </li>
         </ul>

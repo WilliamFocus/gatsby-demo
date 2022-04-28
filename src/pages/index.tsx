@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
@@ -23,7 +24,9 @@ const IndexPage: React.FC = () => (
             all dynamic cart/checkout functionality happens dynamically with our
             JS SDKs.
           </div>
-          <a className="btn">Shop Now</a>
+          <a className="btn">
+            <Link to="/products">Shop Now</Link>
+          </a>
         </div>
       </div>
       <div className="categories">
@@ -33,29 +36,29 @@ const IndexPage: React.FC = () => (
             Put the shine on your work by lighting up your office with our range
             of desk lamps.
           </div>
-          <div className="btn">Discover</div>
+          <div className="btn">
+            <Link to="/products">Discover</Link>
+          </div>
         </article>
         <article className="categories-item">
           <h1 className="title">Floor Lamps</h1>
           <div className="desc">
             Floor lamps are an easy way to brighten up any space.
           </div>
-          <div className="btn">Discover</div>
+          <div className="btn">
+            <Link to="/products">Discover</Link>
+          </div>
         </article>
         <article className="categories-item">
           <h1 className="title">Table Lamps</h1>
           <div className="desc">
             Table lamps are a great way to add comfort and style to your room.
           </div>
-          <div className="btn">Discover</div>
+          <div className="btn">
+            <Link to="/products">Discover</Link>
+          </div>
         </article>
       </div>
-      {/* <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p> */}
     </div>
   </Layout>
 )
