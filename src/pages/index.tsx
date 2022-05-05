@@ -1,10 +1,10 @@
-import { Link } from "gatsby"
-import * as React from "react"
-import Layout from "../components/Layout"
-import Seo from "../components/Seo"
+import { Link } from 'gatsby'
+import * as React from 'react'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
-import { indexStyles } from "../styles/index.module.less"
+import { indexStyles } from '../styles/index.module.less'
 
 const IndexPage: React.FC = () => (
   <Layout>

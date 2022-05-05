@@ -1,5 +1,5 @@
-import * as React from "react"
-import { tipsStyles } from "../styles/tips.module.less"
+import * as React from 'react'
+import { tipsStyles } from '../styles/tips.module.less'
 
 const Header: React.FC = () => {
   return (

@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { ProductCardItemStyles } from "../styles/ProductCardItem.module.less"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { ProductCardItemStyles } from '../styles/ProductCardItem.module.less'
 
 type ProductCardItemPropsType = {
   /**
    * 商品卡片大小
    */
-  size: "big" | "small"
+  size: 'big' | 'small'
   /**
    * 商品详情路径
    */
@@ -34,7 +34,7 @@ const ProductCardItem: React.FC<ProductCardItemPropsType> = ({
 }) => {
   return (
     <article className={ProductCardItemStyles}>
-      <div className={size === "big" ? "big-size" : "small-size"}>
+      <div className={size === 'big' ? 'big-size' : 'small-size'}>
         <Link to={path}>
           <div className="product-item">
             <div className="img">

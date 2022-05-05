@@ -1,14 +1,14 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { navStyles } from "../styles/header.module.less"
-import ShoppingIcon from "./ShoppingIcon"
-import SearchIcon from "./SearchIcon"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { navStyles } from '../styles/header.module.less'
+import ShoppingIcon from './ShoppingIcon'
+import SearchIcon from './SearchIcon'
 
 type HeaderPropsType = {
   siteTitle: string
 }
 
-const Header: React.FC<HeaderPropsType> = ({ siteTitle = "" }) => {
+const Header: React.FC<HeaderPropsType> = ({ siteTitle = '' }) => {
   return (
     <header>
       <div className={navStyles}>

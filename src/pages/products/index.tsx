@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import Layout from "../../components/Layout"
-import ProductCardItem from "../../components/ProductCardItem"
-import Seo from "../../components/Seo"
-import { productsStyles } from "../../styles/products.module.less"
+import React, { useState } from 'react'
+import Layout from '../../components/Layout'
+import ProductCardItem from '../../components/ProductCardItem'
+import Seo from '../../components/Seo'
+import { productsStyles } from '../../styles/products.module.less'
 
 const Products: React.FC = () => {
-  const [currentSize, setCurrentSize] = useState<"big" | "small">("big")
-  const onChangeSize = (Size: "big" | "small") => setCurrentSize(Size)
+  const [currentSize, setCurrentSize] = useState<'big' | 'small'>('big')
+  const onChangeSize = (Size: 'big' | 'small') => setCurrentSize(Size)
 
   return (
     <Layout>
@@ -15,8 +15,8 @@ const Products: React.FC = () => {
         <h1 className="title">All Products</h1>
         <div className="size-btn">
           <button
-            className={currentSize === "big" ? "check" : undefined}
-            onClick={() => onChangeSize("big")}
+            className={currentSize === 'big' ? 'check' : undefined}
+            onClick={() => onChangeSize('big')}
           >
             <svg
               className="fill-current w-4 h-4"
@@ -36,8 +36,8 @@ const Products: React.FC = () => {
             </svg>
           </button>
           <button
-            className={currentSize === "small" ? "check" : undefined}
-            onClick={() => onChangeSize("small")}
+            className={currentSize === 'small' ? 'check' : undefined}
+            onClick={() => onChangeSize('small')}
           >
             <svg
               className="fill-current w-4 h-4"
@@ -63,12 +63,12 @@ const Products: React.FC = () => {
               price="$250.00"
               picSrc={
                 [
-                  "https://demo.elasticpath.com/static/12af663b87c3a4933fc3930bae18e7e7/e9c7b/486349d6-c234-4c31-87ab-131f90230fb5.png",
-                  " https://demo.elasticpath.com/static/13eae8f7d28eeb66a999d20f919a4d72/c1ced/a0063567-2c2a-4546-ba34-7709991ef8f8.png",
-                  "https://demo.elasticpath.com/static/b103597cb29d58be491915f41328a444/c1ced/f21d99f6-242f-4921-8fb8-1af677b83c2e.png",
+                  'https://demo.elasticpath.com/static/12af663b87c3a4933fc3930bae18e7e7/e9c7b/486349d6-c234-4c31-87ab-131f90230fb5.png',
+                  ' https://demo.elasticpath.com/static/13eae8f7d28eeb66a999d20f919a4d72/c1ced/a0063567-2c2a-4546-ba34-7709991ef8f8.png',
+                  'https://demo.elasticpath.com/static/b103597cb29d58be491915f41328a444/c1ced/f21d99f6-242f-4921-8fb8-1af677b83c2e.png',
                 ][
                   Math.floor(
-                    Math.random() * (Math.floor(2) - Math.ceil(0) + 1)
+                    Math.random() * (Math.floor(2) - Math.ceil(0) + 1),
                   ) + Math.ceil(0)
                 ]
               }

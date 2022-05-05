@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { footerStyles } from "../styles/footer.module.less"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { footerStyles } from '../styles/footer.module.less'
 
 type FooterPropsType = {
   siteTitle: string
 }
 
-const Footer: React.FC<FooterPropsType> = ({ siteTitle = "" }) => {
+const Footer: React.FC<FooterPropsType> = ({ siteTitle = '' }) => {
   return (
     <footer className={footerStyles}>
       <div className="item">

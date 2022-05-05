@@ -5,45 +5,45 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-gatsby-cloud": "^4.12.1",
-    "gatsby-plugin-image": "^2.12.1",
+    "gatsby": "^4.13.1",
+    "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-less": "^6.13.0",
     "gatsby-plugin-manifest": "^4.12.1",
     "gatsby-plugin-offline": "^5.12.1",
-    "gatsby-plugin-react-helmet": "^5.12.1",
-    "gatsby-plugin-sharp": "^4.12.1",
-    "gatsby-source-filesystem": "^4.12.1",
-    "gatsby-transformer-sharp": "^4.12.1",
+    "gatsby-plugin-react-helmet": "^5.13.0",
+    "gatsby-plugin-sass": "^5.13.0",
+    "gatsby-plugin-sharp": "^4.13.0",
+    "gatsby-source-filesystem": "^4.13.0",
+    "gatsby-transformer-sharp": "^4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
-    "prettier": "^2.6.2",
-    "@types/node": "^17.0.26",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@types/node": "^17.0.31",
     "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.15",
-    "typescript": "^4.6.3"
+    "@types/react-dom": "^17.0.16",
+    "eslint": "^8.14.0",
+    "eslint-config-react-app": "^7.0.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.4.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint:fix": "eslint --fix",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,html}\" .prettierrc --config ./.prettierrc",
+    "format": "npm run lint:fix && npm run prettier:fix",
+    "prepare": "husky install",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../../components/Layout"
-import Seo from "../../components/Seo"
+import Layout from '../../components/Layout'
+import Seo from '../../components/Seo'
 
 const About: React.FC = () => (
   <Layout>
-    <div style={{ marginTop: 60, textAlign: "center" }}>
+    <div style={{ marginTop: 60, textAlign: 'center' }}>
       <Seo title="About" />
       <h1 style={{ marginBottom: 40 }}>About this demo</h1>
       <p>
