@@ -13,7 +13,7 @@ const IndexPage: React.FC = () => (
       <div className="banner">
         <div className="banner-box">
           <div className="title">
-            The Elastic Path Commerce Cloud demo store
+            The Elastic Path Commerce Cloud demo store.
           </div>
           <div className="desc">
             This is a Gatsby demo store, built using the source plugin to fetch
